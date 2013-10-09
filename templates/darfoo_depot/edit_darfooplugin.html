@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% block title %} Darfooplugin - Edit {% endblock %}
+
+{% block heading %} <h1> Darfooplugin</h1><h2> Edit </h2> {% endblock %}
+{% block content %} 
+<table>
+<form action="" method="POST" enctype="multipart/form-data"> {% csrf_token %}
+    <lable>插件:</lable><input type="file"  name="darfoo_plugin"/>
+    <lable>图片:</lable><input type="file"  name="darfoo_pic"/>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  {{form}}
+  <tr>
+    <td colspan="2" align="right"><input type="submit" value="Save"/></td>
+  </tr>
+</form>
+</table>
+{% endblock %}

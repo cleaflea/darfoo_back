@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Darfoo</title>
+
+	<script type="text/javascript">
+	(function(window, undefined){
+		'use strict';
+		var loc = window.location,
+		nav = window.navigator,
+		ua = nav.userAgent,
+		pa = /iPod|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+		if ( pa.test(ua) ) {
+			// 跳转
+			loc.href = 'http://m.iissnan.com';
+		}
+	})(window);
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/site_media/darfooindex/css/index.css" />
+	<link rel="icon" href="/site_media/darfooindex/images/favicon.ico" type="image/x-icon" charset="utf-8">
+	<link rel="shortcut icon" href="/site_media/darfooindex/images/favicon.ico" type="image/x-icon">
+
+	<!--[if IE]>
+	<style>
+	.cur-infor h3{ background:url("/site_media/darfooindex/images/join-bg.png") no-repeat;}
+	.btn-send{ background:url(/site_media/darfooindex/images/ie-hack.png) -134px -15px no-repeat; width:57px; height:57px; border:0;}
+	.right-photo li p{ background:url(/site_media/darfooindex/images/ie-hack.png) -31px 0 no-repeat;}
+	.right-photo .join-us{ background:url("/site_media/darfooindex/images/ie-hack.png") 0 -98px no-repeat;}
+	.right-photo .join-us:hover{ background:url("/site_media/darfooindex/images/ie-hack.png") 0 -344px no-repeat;}
+	</style>
+	<![endif]-->
+
+	<!--[if (lt IE 9)|(IE 8)]>
+	<![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+
+	<!-- top-bar -->
+	<div class="top-bar clearfix" id="product">
+		<h1 class="fl"><a href="#product" class="logo">Darfoo Tech</a></h1>
+		<div class="nav-hd fr">
+			<ul>
+				<li>
+					<a href="#product">Product</a>
+				</li>
+				<li>
+					<a href="#team">Team</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end top-bar -->
+
+    {% block content %} {% endblock %}
+
+
+</div>
+
+<script type="text/javascript" src="/site_media/darfooindex/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/site_media/darfooindex/js/index.js"></script>
+
+</body>
+</html>

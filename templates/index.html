@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta property="wb:webmaster" content="047cd6bcd0edb43b" />
+	<meta charset="utf-8" />
+	<title>Darfoo</title>
+
+	<script type="text/javascript">
+	(function(window, undefined){
+		'use strict';
+		var loc = window.location,
+		nav = window.navigator,
+		ua = nav.userAgent,
+		pa = /iPod|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+		if ( pa.test(ua) ) {
+			// 跳转
+			//loc.href = 'http://m.iissnan.com';
+			loc.href = '/depot/phone/';
+		}
+	})(window);
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="/site_media/darfooindex/css/index.css" />
+	<link rel="icon" href="/site_media/darfooindex/images/favicon.ico" type="image/x-icon" charset="utf-8">
+	<link rel="shortcut icon" href="/site_media/darfooindex/images/favicon.ico" type="image/x-icon">
+
+	<!--[if IE]>
+	<style>
+	.cur-infor h3{ background:url("/site_media/darfooindex/images/join-bg.png") no-repeat;}
+	.btn-send{ background:url(/site_media/darfooindex/images/ie-hack.png) -134px -15px no-repeat; width:57px; height:57px; border:0;}
+	.right-photo li p{ background:url(/site_media/darfooindex/images/ie-hack.png) -31px 0 no-repeat;}
+	.right-photo .join-us{ background:url("/site_media/darfooindex/images/ie-hack.png") 0 -98px no-repeat;}
+	.right-photo .join-us:hover{ background:url("/site_media/darfooindex/images/ie-hack.png") 0 -344px no-repeat;}
+	</style>
+	<![endif]-->
+
+	<!--[if (lt IE 9)|(IE 8)]>
+	<![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+
+	<!-- top-bar -->
+	<div class="top-bar clearfix" id="product">
+		<h1 class="fl"><a href="#product" class="logo">Darfoo Tech</a></h1>
+		<div class="nav-hd fr">
+			<ul>
+				<li>
+					<a href="#product">Product</a>
+				</li>
+				<li>
+					<a href="#team">Team</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+                <li>
+					<a href="/depot/home/">Plugin</a>
+				</li>
+                {% if request.user.is_authenticated %}
+
+                <li>
+					hello {{ request.user }}
+				</li>
+                {% else %}
+                <li>
+					you are not login
+				</li>
+                {% endif %}
+				<li>
+
+<a href="javascript:void((function(s,d,e){if(/renren\.com/.test(d.location))return;var f='http://share.renren.com/share/buttonshare?link=',u=d.location,l=d.title,p=[e(u),'&title=',e(l)].join('');function%20a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent));" title="分享到人人"><img src="http://a.xnimg.cn/imgpro/share/share-tinybtn.png" title="分享到人人"/></a>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end top-bar -->
+
+	<!-- header -->
+	<div class="header">
+		<div class="show-bg"></div>
+		<ul class="show-hd clearfix" id="show-hd">
+			<li class="show-cur">
+				<div class="left-show">
+					<div class="img-hd">
+						<img src="/site_media/darfooindex/images/phoneContentMain.png" alt="Selected application On click icon" />
+					</div>
+				</div>
+
+				<div class="right-infor">
+					<p class="trouble">Do they have<br/>the <strong>right</strong> applications?</p>
+					<p class="solution">
+						<strong>Darfoo</strong> offers<br/>
+						<em>Selected application<br>On click icon</em>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="left-show">
+					<div class="img-hd">
+						<img src="/site_media/darfooindex/images/phoneContentRight.png" alt="large fonts large icons" />
+					</div>
+				</div>
+
+				<div class="right-infor">
+					<p class="trouble">Are the letters and icons<br/><strong>large enough</strong><br/>for them to read?</p>
+					<p class="solution">
+						<strong>Darfoo</strong> offers<br/>
+						<em>large fonts<br>large icons</em>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="left-show">
+					<div class="img-hd">
+						<img src="/site_media/darfooindex/images/phoneContentRight1.png" alt="Simplified Operation" />
+					</div>
+				</div>
+
+				<div class="right-infor">
+					<p class="trouble">Are the settings<br/><strong>hard</strong> for them?</p>
+					<p class="solution">
+						<strong>Darfoo</strong> offers<br/>
+						<em>Simplified Operation</em>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="left-show">
+					<div class="img-hd">
+						<img src="/site_media/darfooindex/images/phoneContentLeft.png" alt="Family moments" />
+					</div>
+				</div>
+
+				<div class="right-infor">
+					<p class="trouble">Do you want to<br/><strong>share your life</strong><br/>with them?</p>
+					<p class="solution">
+						<strong>Darfoo</strong> offers<br/>
+						<em>Family moments</em>
+					</p>
+				</div>
+			</li>
+
+		</ul>
+
+		<div class="email-hd">
+			<span class="email-tip">Your Email here...</span>
+			<input type="text" class="input-email" id="input-email" />
+			<!-- <input type="button" value="Send" class="btn-send" id="email-send" /> -->
+			<a href="javascript:void(0);" class="btn-send" id="email-send">Send</a>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- use-case -->
+	<div class="case-hd">
+		<div class="case-detail">
+			<ol>
+				<li class="step1-hd clearfix">
+					<span class="step-num">1</span>
+					<p>A adoption of smartphone among users aged <em>50+</em> is low.</p>
+					<i class="step step-1"></i>
+				</li>
+				<li class="step2-hd clearfix">
+					<span class="step-num">2</span>
+					<p>Adults download <em>Darfoo</em> to their parents’ smartphones from app market.</p>
+					<i class="step step-2"></i>
+				</li>
+				<li class="step3-hd clearfix">
+					<span class="step-num">3</span>
+					<p>They can customize functions according to their parents’ <em>individual</em> needs.</p>
+					<i class="step step-3"></i>
+				</li>
+				<li class="step4-hd clearfix">
+					<span class="step-num">4</span>
+					<p>This app will enhance the user experience for everyone, including customers with limited smartphone experience, by <em>increasing the usability of features and adding streamlined functionality.</em></p>
+					<i class="step step-4"></i>
+				</li>
+				<li class="step5-hd clearfix">
+					<span class="step-num">5</span>
+					<p>Caregivers can <em>remotely access</em> their parents’ smartphones when there are some connectiveing network problems.</p>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<!-- end use-case -->
+
+	<!-- team -->
+	<div class="team-hd" id="team">
+		<div class="bar">
+			<a href="#product"><img src="/site_media/darfooindex/images/logo.png" alt="Darfoo" /></a>
+			<h2>Team</h2>
+			<a href="#product" class="back">Back to top</a>
+		</div>
+		<div class="left-intro fl">
+			<p>Darfoo focuses on enabling men and women of all ages to enjoy today's cutting-edge technology.</p>
+			<p>We strive to find a better connection between elderly people and their smartphones.</p>
+			<p>Our flagship product, Darfoo, allows anyone to remotely customize via cloud sync an elderly relative's smartphone to ensure better communication and connectivity.</p>
+		</div>
+		<div class="right-photo fl" id="right-photo">
+			<a class="join-us" href="#join"><strong>Join</strong> Us!</a>
+			<ul>
+				<li class="member-1">
+					<p><strong>Elsa</strong> CEO</p>
+					<img src="/site_media/darfooindex/images/headshot/Elsa.png" alt="Elsa" />
+				</li>
+				<li class="member-2">
+					<p><strong>Iris</strong> CTO</p>
+					<img src="/site_media/darfooindex/images/headshot/Iris.png" alt="Iris" />
+				</li>
+				<a href="/team/cleantha/"><li class="member-3">
+					<p><strong class="long-name">Hui</strong> R&D</p>
+					<img src="/site_media/darfooindex/images/headshot/Cleantha.png" alt="Cleantha" />
+				</li></a>
+				<li class="member-4">
+					<p><strong class="long-name">Binyan</strong> R&D</p>
+					<img src="/site_media/darfooindex/images/headshot/Binyan.png" alt="Binyan" />
+				</li>
+				<li class="member-5">
+					<p><strong class="long-name">Michel</strong> UI</p>
+					<img src="/site_media/darfooindex/images/headshot/Michel.png" alt="Michel" />
+				</li>
+				<li class="member-6">
+					<p><strong class="long-name">Edward</strong> IxD</p>
+					<img src="/site_media/darfooindex/images/headshot/Edward.png" alt="Edward" />
+				</li>
+				<li class="member-7">
+					<p><strong class="long-name">Will_Lin</strong> HR</p>
+					<img src="/site_media/darfooindex/images/headshot/Will_L.png" alt="Will_Lin" />
+				</li>
+				<li class="member-8">
+					<p><strong class="long-name">Will_Shi</strong> MKT</p>
+					<img src="/site_media/darfooindex/images/headshot/Will_S.png" alt="Will_Shi" />
+				</li>
+				<li class="member-9">
+					<p><strong>Paul</strong> R&D</p>
+					<img src="/site_media/darfooindex/images/headshot/Paul.png" alt="Paul" />
+				</li>
+				<li class="member-10">
+					<p><strong>Sean</strong> R&D</p>
+					<img src="/site_media/darfooindex/images/headshot/Sean.png" alt="Sean" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end team -->
+
+	<!-- join us -->
+	<div class="join-hd" id="join">
+		<ul class="join-infor">
+			<li class="cur-infor first">
+				<h3>UI/UX Designer</h3>
+				<div class="require-hd">
+					<p>We are looking for proactive, highly motivated engineers to work on our Android Designer.</p>
+					<h4>Requirements</h4>
+					<ol>
+						<li>Talent</li>
+						<li>Understand fundamentals of UI design</li>
+						<li>Strong understanding of UX and Android design principles, including usability, responsiveness, navigation and aesthetics</li>
+						<li>Sensitive towards colors</li>
+					</ol>
+				</div>
+			</li>
+			<li>
+				<h3>Android Developer</h3>
+				<div class="require-hd">
+					<p>We are looking for proactive, highly motivated engineers to work on our Android product.</p>
+					<h4>Requirements</h4>
+					<ol>
+						<li>Talent</li>
+						<li>Has at least one android development experience</li>
+						<li>Has an Android smartphone</li>
+					</ol>
+				</div>
+			</li>
+			<li class="last">
+				<h3>Web Developer</h3>
+				<div class="require-hd">
+					<p>We are looking for a proactive, highly-motivated senior engineer to work on a variety of projects related to Flipboard's web technologies.</p>
+					<h4>Requirements</h4>
+					<ol>
+						<li>Has developed at least one website</li>
+						<li>Familiar with web developing tools such as photoshop, javascript, ajax</li>
+						<li>Had hacked browsers such as IE, Chrome, Safari, Fire fox Opera etc</li>
+					</ol>
+				</div>
+			</li>
+		</ul>
+		<p class="our-email">Please feel free to send your resume to <em>hr@darfoo.com</em> </p>
+	</div>
+	<!-- end join us -->
+
+	<!-- contact -->
+	<div class="contact-hd" id="contact">
+		<div class="bar">
+			<a href="#product"><img src="/site_media/darfooindex/images/logo.png" alt="Darfoo" /></a>
+			<h2>Contact</h2>
+			<a href="#product" class="back">Back to top</a>
+		</div>
+		<div class="left-words fl">
+			<p class="mission"><em>Our mission</em> is to provide our parents a better experience when they use the smartphone. But we may not provide the best product without your help. We appreciate your thoughts and opinions.</p>
+			<p class="note"><em>Note:</em> We respect your privacy and we'll only use the information you provide to deliver a response. We never share your personal information with anyone.</p>
+		</div>
+		<div class="right-send fl">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" id="name" class="input-txt" tip-data="name" />
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="text" id="email" class="input-txt" tip-data="Email" />
+			</div>
+			<div>
+				<label for="msg">Msg</label>
+				<textarea id="msg" class="input-txt" tip-data="message"></textarea>
+			</div>
+			<div class="send-hd">
+				<!-- <input type="button" value="Send" class="btn-send" id="infor-send" /> -->
+				<a href="javascript:void(0);" class="btn-send" id="infor-send">Send</a>
+			</div>
+		</div>
+	</div>
+	<!-- end contact -->
+</div>
+
+<script type="text/javascript" src="/site_media/darfooindex/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/site_media/darfooindex/js/index.js"></script>
+
+</body>
+</html>

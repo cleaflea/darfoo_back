@@ -1,0 +1,7 @@
+<uwsgi>
+    <socket>:33333</socket>
+    <chdir>/home/mrfruit/darfoo/darfoo_back</chdir>
+    <module>django_wsgi</module>
+    <processes>4</processes>
+    <daemonize>uwsgi.log</daemonize>
+</uwsgi>

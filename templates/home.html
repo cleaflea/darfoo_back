@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header class="jumbotron subhead" id="overview">
+    <div class="inner">
+        <h1>大福科技</h1>
+        <p class="lead">keep calm and hack on</p>
+    </div>
+
+    <script type="text/javascript">
+        //window.onload = alert('welcome to darfoo');
+        function myFunction(){
+            alert("cleantha");
+        }
+	var $$ = function(func){
+		var oldOnload =window.onload;
+		if(typeof window.onload != 'function'){
+			window.onload = func;
+		}else{
+			window.onload = function(){
+				oldOnload();
+				func();
+			}
+		}
+	}
+
+	//调用
+	$$(function(){
+		//页面加载完后执行js代码
+		//alert("welcome to darfoo");
+	})
+    </script>
+</header>
+
+<session>
+    <div class="row-fluid">
+        <div class="span6">
+            <div>
+                <img src="/site_media/img/logo.png"/>
+            </div>
+        </div>
+        <div class="span6">
+            <div>
+                <img src="/site_media/img/darfoo_download.png"/>
+            </div>
+            <button class="btn btn-success btn-large btn-block" onclick="myFunction()">
+                下载
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="row-fluid">
+
+    </div>
+</session>
+<hr/>
+<hr/>
+<hr/>
+
+{% endblock %}

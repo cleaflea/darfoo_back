@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="/site_media/css/GitHub2.css"/>
+
+<h2>server端</h2>
+<ul>
+<li>验证码 <code>captcha</code>＋<code>widget_tweaks</code> 近期可以搞定</li>
+<li>微信 <code>werobot</code> <code>nodejs</code>＋<code>socketio</code>＋<code>redis</code> 需要人手</li>
+<li>插件管理 <code>Django</code>＋<code>memcache</code> + <code>restful</code> 近期可以搞定</li>
+<li>整体就是一个为<code>django</code>为主框架 <code>nodejs</code>为辅处理异步请求(通过<code>nginx</code>或者<code>django</code>的路由把异步请求代理到<code>nodejs</code>的进程)</li>
+<li>异步请求就是之后的微信通信 以及在线定制应该也会用到 不然体验会很烂 </li>
+<li><code>server</code>这边还要做的事情就是各大SNS开放平台的接入，我现在在测试新浪的，还要审核身份，微信升级为服务号之后的一些新的权限也在审核中真是蛋疼…..</li>
+<li>站内搜索，完成定制用户对插件的搜索和查找</li>
+<li>购买新的服务器(ec2) 以及绑定darfoo的正宗域名</li>
+<li>对所有静态资源进行代理，防止加载过慢，影响体验</li>
+<li>通信用base64编码(!!!)</li>
+</ul>
+<h3>server所缺人手</h3>
+<ul>
+<li>主要是<code>python</code>程序员 <code>nodejs</code>程序员 会<code>java</code> <code>ruby</code>的也可以  精通<code>scala</code> <code>erlang</code>的可以要  这个绝对需要</li>
+<li>也就是<code>python,nodejs</code> &gt; <code>scala, erlang</code> &gt; <code>java,ruby</code></li>
+<li>懂网络安全 web攻防的优先录取</li>
+</ul>
+<h2>服务器</h2>
+<ul>
+<li>熟悉<code>linux/unix</code></li>
+<li>熟悉<code>git</code> (需要维护两个git仓库)</li>
+<li>熟悉<code>vim/emacs</code> 熟悉bash脚本 或者其他轻量级的系统脚本语言 </li>
+<li>服务器管理也是需要专门的人 或者是从server端那兼并着管</li>
+</ul>
+<h2>前端</h2>
+<ul>
+<li>ajax请求成功和请求失败的提示效果（周日开会说过了） </li>
+<li>对email验证以及输入框重内容不能为空的提示也和ajax请求之后的提示框一个效果</li>
+<li>还有好多奇奇怪怪的效果 比如显示插件列表的 编辑插件等等</li>
+<li>插件管理的前端也要重新设计 之前我写的那套太丑了！</li>
+<li>在线定制<code>html5+css3</code> 需要人手</li>
+<li><code>angularjs/jquery</code> 大神 </li>
+</ul>
+<h3>前端所缺人手</h3>
+<ul>
+<li><code>html5+css</code>程序员 <code>js</code>大神 <code>css</code>大神</li>
+<li>（貌似前端我也说不上什么话啊 但是后期我还是会参与的）</li>
+<li>会使用<code>phonegap</code>的优先  可以参与移动端也可以参与前端的大神需要的</li>
+</ul>
+<h2>android</h2>
+<ul>
+<li>有经验的android程序员 有开发过项目 不是来学习的 要有实战经验</li>
+<li>熟练使用jvm上其他奇葩的语言也要 <code>groovy scala clojure</code>大神来者不拒</li>
+</ul>
+<h3>android所缺人手</h3>
+<p>反正就是要能写android啦 用<code>ndk</code>的都行 这个也要冰雁把关 冰雁的意见很重要</p>
+<h2>ios</h2>
+<ul>
+<li>我中午吃饭的时候想 现在主要的业务对象和受众的确是老年人，但是年轻人才是真正应该关注的用户  现在ios市场占有率那么高  必然不能忽视，当然ios上肯定没有launcher的概念 要写的就是一个定制APP 这个我可以参与开发 到时候<code>android ios 网页</code>都可以让年轻人定制才有吸引力和竞争力 ios只要1个或2个有经验的即可 熟悉ios开发 熟悉objective-c</li>
+</ul>
+<h2>美工</h2>
+<ul>
+<li>这个你把关吧 要有才华啊 像那个台湾人的一样 让人看了有要让人想给他跪下的感觉</li>
+</ul>
+<h2>开发任务任重道远 小树酱要加油建好一个技术牛逼的团队</h2>
+<h3>每个人都有分工 然后后面<code>R&amp;D</code>部门就大致上面那样分组 各个组之间的成员可以有耦合 最重要的是一定要团结听话有执行力 再加厉害的技术就很ok了</h3>
