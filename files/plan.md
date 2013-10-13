@@ -32,6 +32,7 @@
 * 插件管理的前端也要重新设计 之前我写的那套太丑了！
 * 在线定制```html5+css3``` 需要人手
 * ```angularjs/jquery``` 大神 
+* [FileUpload](http://tekbrand.com/jquery/10-best-jquery-file-upload-plugins)
 
 ### 前端所缺人手
 * ```html5+css```程序员 ```js```大神 ```css```大神
