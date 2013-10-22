@@ -12,6 +12,7 @@
 * 通信用base64编码(!!!)
 * 为了性能 是否移到JVM上(现在jvm优化的这么逆天)
 * 敏捷开发is everything
+* CDN给静态文件加速
 * celery+rabbitmq(_或者满足mq协议的db，like redis_)，作delay jobs
 * gearman和上面一样也是异步任务神器
 * south作为一个db migration工具，just like rails
